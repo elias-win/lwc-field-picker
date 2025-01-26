@@ -1,0 +1,9 @@
+{
+  "plugins": ["prettier-plugin-apex"],
+  "overrides": [
+    {
+      "files": "**/*.html",
+      "options": { "parser": "lwc" }
+    }
+  ]
+}

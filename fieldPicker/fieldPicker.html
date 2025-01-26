@@ -1,0 +1,26 @@
+<template>
+  <lightning-card>
+    <lightning-modal-header label="Field picker"></lightning-modal-header>
+    <lightning-modal-body>
+      <lightning-spinner
+        alternative-text="Loading fields..."
+        size="medium"
+        if:true={loading}
+      ></lightning-spinner>
+      <div class="slds-p-around_medium">
+        <template for:each={inputs} for:item="input">
+          <lightning-combobox
+            onchange={onChangeInput}
+            options={input.options}
+            label={input.label}
+            data-index={input.index}
+            key={input.index}
+          ></lightning-combobox>
+        </template>
+      </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+      <lightning-button label="OK" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
+  </lightning-card>
+</template>
