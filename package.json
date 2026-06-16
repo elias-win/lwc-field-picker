@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "https://github.com/elias-win",
   "devDependencies": {
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.4",
     "prettier-plugin-apex": "^2.2.6"
   },
   "scripts": {
